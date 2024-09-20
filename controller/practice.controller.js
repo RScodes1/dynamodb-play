@@ -17,11 +17,11 @@ exports.getUserFromStatus = (req,res) => {
         ExpressionAttributeValues: {
           ":status": statusValue,
         },
-          ExclusiveStartKey: startKey
+        ExclusiveStartKey: startKey
     };
 
 try {
-   const response = docClient.query(params, (err, data) => {
+    docClient.query(params, (err, data) => {
     if (err) {
       console.error("Error querying DynamoDB:", err);
     } else {
@@ -34,7 +34,6 @@ try {
  } catch(err){
         console.log(err.message);
     }
-
 }
 
 
