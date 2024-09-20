@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "build" : "echo \"Error: no build required\" && exit 1",
+    "build" : "nodemone app.js",
     "server": "nodemon app.js"
   },
   "keywords": [],
